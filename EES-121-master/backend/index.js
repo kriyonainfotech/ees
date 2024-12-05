@@ -33,9 +33,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', require('./routes/indexRoute'));
 
 // Catch-all route to serve the frontend
-app.get('*', (req, res) => {
-    res.sendFile(path.join(buildpath, "index.html"));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(buildpath, "index.html"));
+// });
 
 // Start the server
 app.listen(port, (err) => {
