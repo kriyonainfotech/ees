@@ -10,7 +10,7 @@ const cors = require("cors");
 dotenv.config();
 connectDB();
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 // Path to the frontend's built files
 const buildpath = path.join(__dirname, "../frontend/dist");
